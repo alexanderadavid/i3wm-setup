@@ -1,8 +1,10 @@
+# theme
+ZSH_THEME="robbyrussell"
+
 # path
+export ZSH="/home/alex/.oh-my-zsh"
 export PATH=$PATH:/home/alex/.local/bin
 export PATH=$PATH:/usr/local/go/bin
-# TODO update this one
-export ZSH="/Users/alex/.oh-my-zsh"
 
 # aliases
 alias gco="git checkout"
