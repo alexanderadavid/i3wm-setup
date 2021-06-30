@@ -1,0 +1,66 @@
+#[weather]
+#command sh ~/.config/i3blocks/weather.sh
+#separator=true
+#interval = 600
+
+#[volume]
+#label=︁
+#interval=1
+#separator=true
+#command=amixer get Master | egrep -o "[0-9]+%" | sed -n '2 p'
+#color=#ffd0d8
+
+#[battery]
+#command= python ~/Scripts/battery.py
+#markup=pango
+#interval=30
+
+#[memory]
+#label=
+#separator=true
+#interval=1
+#command=/usr/lib/i3blocks/memory
+#color=#7ea1a5
+
+#[disk]
+#label=
+#instance=/mnt/data
+#interval=10
+#separator=false
+
+[temperature]
+label=︁
+interval=10
+command=T=$(cat /sys/class/thermal/thermal_zone0/temp); echo $(( $T / 1000 ))°C
+color=#dcedc1
+separator=true
+
+[wifi]
+label=︁
+#instance=wlp1s0
+command=iwgetid -r
+color=#669bd1
+interval=10
+separator=true
+
+[bandwidth]
+label=
+instance=wlp1s0
+interval=1
+color=#83d0c9
+
+[time]
+command= date '+%m/%d/%Y'
+label=
+interval=1#
+color=#bc9dff
+
+[time]
+command= date +"%I:%M%P"
+interval=2
+label=
+
+[cpu]
+label=
+interval=10
+separator=true

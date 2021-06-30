@@ -1,0 +1,107 @@
+{
+    "javascript.validate.enable": false, 
+    "protoc": {
+        "options": [
+            "--proto_path=${workspaceRoot}/go/src", 
+            "--proto_path=${env.GOPATH}/src"
+        ]
+    }, 
+    "python.pythonPath": "/usr/bin/python2", 
+    "terminal.integrated.rendererType": "dom", 
+    "window.menuBarVisibility": "hidden", 
+    "workbench.activityBar.visible": false, 
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true, 
+    "breadcrumbs.enabled": true, 
+    "editor.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'", 
+    "editor.fontSize": 13, 
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    }, 
+    "telemetry.enableCrashReporter": false, 
+    "go.docsTool": "godoc", 
+    "editor.formatOnSaveTimeout": 2000, 
+    "prettier.singleQuote": true, 
+    "gitlens.codeLens.enabled": false, 
+    "terminal.integrated.cursorStyle": "line", 
+    "[typescript]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    }, 
+    "files.autoSave": "afterDelay", 
+    "go.liveErrors": {
+        "delay": 500, 
+        "enabled": true
+    }, 
+    "gitlens.advanced.telemetry.enabled": false, 
+    "flow.useNPMPackagedFlow": true, 
+    "javascript.format.semicolons": "remove", 
+    "typescript.format.semicolons": "remove", 
+    "go.formatTool": "goimports", 
+    "go.autocompleteUnimportedPackages": true, 
+    "runOnSave.statusMessageTimeout": 3000, 
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#000000", 
+        "editorRuler.foreground": "#ff0000", 
+        "tab.activeBackground": "#201f1f", 
+        "editor.selectionBackground": "#6c40bebd", 
+        "peekViewEditor.background": "#000000", 
+        "statusBar.noFolderForeground": "#161a10", 
+        "sideBar.border": "#6F748A", 
+        "editorGroupHeader.tabsBackground": "#000000", 
+        "tab.activeForeground": "#ffffff", 
+        "editor.findMatchHighlightBackground": "#7a89cc81", 
+        "editorGroup.border": "#161a10", 
+        "statusBar.noFolderBackground": "#90A62D", 
+        "statusBar.foreground": "#161a10", 
+        "editor.findMatchBackground": "#7a89ccc5", 
+        "tab.inactiveBackground": "#000000", 
+        "peekView.border": "#6F748A", 
+        "statusBar.border": "#161a10", 
+        "tab.inactiveForeground": "#c3c8c7", 
+        "statusBar.background": "#90A62D", 
+        "editor.background": "#000000", 
+        "tab.activeBorder": "#847D87"
+    }, 
+    "go.toolsGopath": "~/Development/cwn/go", 
+    "go.testFlags": [
+        "-v"
+    ], 
+    "vsicons.dontShowNewVersionMessage": true, 
+    "editor.acceptSuggestionOnCommitCharacter": false, 
+    "workbench.statusBar.visible": true, 
+    "terminal.integrated.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'", 
+    "prettier.jsxBracketSameLine": true, 
+    "prettier.bracketSpacing": false, 
+    "editor.fontLigatures": true, 
+    "explorer.confirmDelete": false, 
+    "javascript.updateImportsOnFileMove.enabled": "always", 
+    "workbench.sideBar.location": "left", 
+    "typescript.disableAutomaticTypeAcquisition": true, 
+    "python.formatting.autopep8Args": [
+        "--max-line-length", 
+        "100"
+    ], 
+    "editor.lineHeight": 22, 
+    "editor.minimap.enabled": false, 
+    "python.formatting.provider": "yapf", 
+    "mochaExplorer.env": {
+        "PUPPETEER_ARGS": "--no-sandbox --disable-dev-shm-usage"
+    }, 
+    "python.formatting.autopep8Path": "/usr/bin/autopep8", 
+    "workbench.editor.enablePreview": false, 
+    "go.formatFlags": [
+        "-w"
+    ], 
+    "terminal.integrated.fontSize": 13, 
+    "editor.tabSize": 2, 
+    "files.associations": {
+        "*.jsx": "javascript", 
+        "*.yaml": "plain text"
+    }, 
+    "prettier.trailingComma": "es5", 
+    "go.lintTool": "golangci-lint", 
+    "window.zoomLevel": 1, 
+    "telemetry.enableTelemetry": false, 
+    "editor.formatOnSave": true, 
+    "bracketPairColorizer.colorMode": "Independent", 
+    "go.useLanguageServer": true
+}

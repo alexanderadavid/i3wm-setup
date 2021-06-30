@@ -1,0 +1,52 @@
+﻿! URxvt
+! xrdb -merge ~/.Xdefaults
+
+! General settings
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: plain
+URxvt.termName: xterm-256color
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: False
+
+URxvt.scrollTtyOutput:          false
+URxvt.scrollWithBuffer:         true
+URxvt.scrollTtyKeypress:        true
+
+URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,font,
+URxvt.url-launcher: google-chrome-stable
+
+! CTRL-SHIFT-[c/v] copy/paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Fonts
+
+URxvt.font: xft:Ubuntu Mono:pixelsize=21,style=regular
+URxvt.boldFont: xft:Ubuntu Mono:pixelsize=21,style=bold
+URxvt.letterSpace: -1
+!URxvt.font:     xft:bitstream vera sans mono:size=21:antialias=true
+!URxvt.boldFont: xft:bitstream vera sans mono:bold:size=21:antialias=true
+
+URxvt.transparent:   true
+URxvt.shading:           16
+URxvt.depth:                 32
+URxvt.background: rgba:0000/0000/0200/c800
+
+URxvt.foreground: rgba:ffff/ffff/ffff/ffff
+
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+URxvt.font-size.step: 10

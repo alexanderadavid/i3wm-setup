@@ -1,0 +1,32 @@
+/*
+
+# Everything is ignored, use ! operator to choose what we want added back
+!/Scripts
+!/.etc.lightdm
+
+# !/.cache
+# /.cache/*
+# !/.cache/wal
+
+!/.config
+/.config/*
+!/.config/Code/
+/.config/Code/*
+!/.config/Code/User/
+/.config/Code/User/*
+!/.config/Code/User/settings.json
+!/.config/Code/User/keybindings.json
+!/.config/Code/User/snippets
+!/.config/i3
+!/.config/i3blocks
+
+!setupUbuntu.sh
+!README.md
+!userInstalledPackages
+!.Xdefaults
+!.Xmodmap
+!.Xresources
+!.gitignore
+!.xinitrc
+!.xprofile
+!.zshrc
