@@ -51,4 +51,4 @@ URxvt.keysym.C-slash:  font-size:show
 URxvt.font-size.step: 10
 
 ! Fix the weird border
-URxvt*borderColor:  #000000
+URxvt.borderColor:  #000000

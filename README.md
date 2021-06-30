@@ -9,3 +9,5 @@
 
 i3blocks
 rofi colors
+zshrc
+natgeo script
