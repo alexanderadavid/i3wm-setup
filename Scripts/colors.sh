@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source /home/alex/.cache/wal/colors.sh
+. /home/alex/.cache/wal/colors.sh
 
 export color0
 export color1

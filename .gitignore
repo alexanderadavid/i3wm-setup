@@ -4,10 +4,6 @@
 !/Scripts
 !/.etc.lightdm
 
-# !/.cache
-# /.cache/*
-# !/.cache/wal
-
 !/.config
 /.config/*
 !/.config/Code/
@@ -17,9 +13,11 @@
 !/.config/Code/User/settings.json
 !/.config/Code/User/keybindings.json
 !/.config/Code/User/snippets
+
 !/.config/i3
 !/.config/i3blocks
 !/.config/compton.conf
+!/.config/rofi
 
 !setupUbuntu.sh
 !README.md

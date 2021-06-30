@@ -14,3 +14,5 @@ if [ ! -f /usr/share/backgrounds/lightdm.png ]; then
   convert -size 32x32 xc:white /usr/share/backgrounds/lightdm.png 
 fi
 sudo chmod 777 /usr/share/backgrounds/lightdm.png
+
+# TODO install zsh

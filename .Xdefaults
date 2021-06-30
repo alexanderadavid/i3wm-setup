@@ -1,5 +1,4 @@
 ﻿! URxvt
-! xrdb -merge ~/.Xdefaults
 
 ! General settings
 URxvt.saveLines: 2000
@@ -29,6 +28,7 @@ URxvt.letterSpace: -1
 !URxvt.font:     xft:bitstream vera sans mono:size=21:antialias=true
 !URxvt.boldFont: xft:bitstream vera sans mono:bold:size=21:antialias=true
 
+! Visibility
 URxvt.transparent:   false
 URxvt.shading:       0
 URxvt.depth:         0
@@ -36,6 +36,7 @@ URxvt.background: rgba:0000/0000/0200/c800
 
 URxvt.foreground: rgba:ffff/ffff/ffff/ffff
 
+! Input
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
@@ -52,3 +53,28 @@ URxvt.font-size.step: 10
 
 ! Fix the weird border
 URxvt.borderColor:  #000000
+
+
+! Rofi
+!rofi.modi:                           ssh,window,drun,run
+rofi.sidebar-mode:                   true
+rofi.terminal:                       termite
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.opacity:                        100
+rofi.width:                          50
+rofi.lines:                          8
+rofi.columns:                        1
+rofi.font:                           Mono 16
+
+rofi.bw:                             10
+rofi.location:                       0
+rofi.padding:                        20
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    2
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width:                8

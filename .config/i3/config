@@ -215,7 +215,7 @@ bindsym Mod1+n exec firefox
 exec_always sh ~/.fehbg
 
 # Replace caps lock with ctrl
-exec_always setxkbmap -layout us -option ctrl:nocaps
+exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
 
 # Load in the bing photo of the day as background
 exec_always sh ~/Scripts/bing.sh
