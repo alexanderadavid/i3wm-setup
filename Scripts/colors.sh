@@ -2,8 +2,6 @@
 
 source /home/alex/.cache/wal/colors.sh
 
-# echo color15: $color15
-
 export color0
 export color1
 export color2

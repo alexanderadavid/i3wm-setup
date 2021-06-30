@@ -6,7 +6,8 @@
             "--proto_path=${env.GOPATH}/src"
         ]
     }, 
-    "python.pythonPath": "/usr/bin/python2", 
+    "workbench.sideBar.location": "left", 
+    "window.zoomLevel": 1, 
     "terminal.integrated.rendererType": "dom", 
     "window.menuBarVisibility": "hidden", 
     "workbench.activityBar.visible": false, 
@@ -36,7 +37,6 @@
     "javascript.format.semicolons": "remove", 
     "typescript.format.semicolons": "remove", 
     "go.formatTool": "goimports", 
-    "go.autocompleteUnimportedPackages": true, 
     "runOnSave.statusMessageTimeout": 3000, 
     "workbench.colorCustomizations": {
         "sideBar.background": "#000000", 
@@ -44,22 +44,22 @@
         "tab.activeBackground": "#201f1f", 
         "editor.selectionBackground": "#6c40bebd", 
         "peekViewEditor.background": "#000000", 
-        "statusBar.noFolderForeground": "#161a10", 
         "sideBar.border": "#6F748A", 
         "editorGroupHeader.tabsBackground": "#000000", 
         "tab.activeForeground": "#ffffff", 
+        "tab.activeBorder": "#847D87", 
         "editor.findMatchHighlightBackground": "#7a89cc81", 
         "editorGroup.border": "#161a10", 
         "statusBar.noFolderBackground": "#90A62D", 
-        "statusBar.foreground": "#161a10", 
+        "editor.background": "#000000", 
         "editor.findMatchBackground": "#7a89ccc5", 
         "tab.inactiveBackground": "#000000", 
         "peekView.border": "#6F748A", 
         "statusBar.border": "#161a10", 
         "tab.inactiveForeground": "#c3c8c7", 
         "statusBar.background": "#90A62D", 
-        "editor.background": "#000000", 
-        "tab.activeBorder": "#847D87"
+        "statusBar.foreground": "#161a10", 
+        "statusBar.noFolderForeground": "#161a10"
     }, 
     "go.toolsGopath": "~/Development/cwn/go", 
     "go.testFlags": [
@@ -74,7 +74,7 @@
     "editor.fontLigatures": true, 
     "explorer.confirmDelete": false, 
     "javascript.updateImportsOnFileMove.enabled": "always", 
-    "workbench.sideBar.location": "left", 
+    "python.pythonPath": "/usr/bin/python2", 
     "typescript.disableAutomaticTypeAcquisition": true, 
     "python.formatting.autopep8Args": [
         "--max-line-length", 
@@ -99,7 +99,7 @@
     }, 
     "prettier.trailingComma": "es5", 
     "go.lintTool": "golangci-lint", 
-    "window.zoomLevel": 1, 
+    "go.autocompleteUnimportedPackages": true, 
     "telemetry.enableTelemetry": false, 
     "editor.formatOnSave": true, 
     "bracketPairColorizer.colorMode": "Independent", 

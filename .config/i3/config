@@ -211,9 +211,24 @@ bindsym Mod1+n exec firefox
 # slack
 # bindsym Mod1+i exec slack
 
+# Set last background
+exec_always sh ~/.fehbg
+
+# Replace caps lock with ctrl
 exec_always setxkbmap -layout us -option ctrl:nocaps
+
+# Load in the bing photo of the day as background
 exec_always sh ~/Scripts/bing.sh
+
+# Init URxvt
 exec_always --no-startup-id sh ~/.xinitrc
+
+# Consume colors from pywal
 exec_always sh ~/Scripts/colors.sh
-#exec_always picom
+
+# Start redshift
 exec_always redshift
+
+# Start compton
+exec_always --no-startup-id compton
+

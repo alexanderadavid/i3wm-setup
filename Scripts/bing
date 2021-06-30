@@ -13,5 +13,3 @@ echo "https://www.bing.com$urlpath"
 curl --output ~/Pictures/Bing/$DATE.jpg "https://www.bing.com$urlpath"
 
 feh --bg-fill ~/Pictures/Bing/$DATE.jpg
-
-#gsettings set org.gnome.desktop.background picture-uri ~/Pictures/Bing/$DATE.jpg

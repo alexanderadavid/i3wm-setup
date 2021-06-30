@@ -19,6 +19,7 @@
 !/.config/Code/User/snippets
 !/.config/i3
 !/.config/i3blocks
+!/.config/compton.conf
 
 !setupUbuntu.sh
 !README.md

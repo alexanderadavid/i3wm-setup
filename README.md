@@ -8,5 +8,4 @@
 # TODO
 
 i3blocks
-picom/compton
 rofi colors
