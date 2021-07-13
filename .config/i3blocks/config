@@ -3,12 +3,12 @@
 #separator=true
 #interval = 600
 
-#[volume]
-#label=︁
-#interval=1
-#separator=true
-#command=amixer get Master | egrep -o "[0-9]+%" | sed -n '2 p'
-#color=#ffd0d8
+[volume]
+label=
+interval=1
+separator=true
+command=amixer -D pulse get Master | egrep -o "[0-9]+%" | sed -n '2 p'
+color=#ffd0d8
 
 #[battery]
 #command= python ~/Scripts/battery.py
@@ -44,7 +44,7 @@ interval=10
 separator=true
 
 [bandwidth]
-label=
+label=︁
 instance=wlp1s0
 interval=1
 color=#83d0c9
