@@ -1,12 +1,6 @@
 #!/usr/bin/python
 
-try:
-    # For Python 3.0 and later
-    from urllib.request import urlopen
-except ImportError:
-    # Fall back to Python 2's urllib2
-    from urllib2 import urlopen
-
+from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import os
 
@@ -33,7 +27,6 @@ def main():
     webpage = urlopen(
         "https://www.nationalgeographic.com/photography/photo-of-the-day/"
     ).read()
-    # print(webpage)
     soup = BeautifulSoup(webpage, "html.parser")
 
     for tag in soup.find_all("meta"):
@@ -42,17 +35,13 @@ def main():
         elif tag.get("property", None) == "og:title":
             title = tag.get("content", None)
 
-    title = (title + ".jpg").replace(" ", "_")
+    title = (title).split('|')[0].strip().replace(" ", "_") + '.jpg'
 
     os.system("curl --output %s %s" % ("~/Pictures/NatGeo/" + title, image))
-
-    # os.system('feh --bg-fill %s' % "~/Pictures/NatGeo/" + title)
-    os.system("wal -i %s" % "~/Pictures/NatGeo/" + title)
-
-    # -scale 10% -scale 1000%
+    os.system("wal -b '#000000' -i %s" % "~/Pictures/NatGeo/" + title)
 
     os.system(
-        "convert -gravity center -scale 3840x2416 %s /usr/share/pixmaps/lock_screen.png"
+        "convert -gravity center -scale 3840x2416 %s /usr/share/backgrounds/lightdm.png"
         % ("~/Pictures/NatGeo/" + title)
     )
 

@@ -32,7 +32,7 @@ URxvt.letterSpace: -1
 URxvt.transparent:   false
 URxvt.shading:       0
 URxvt.depth:         0
-URxvt.background: rgba:0000/0000/0200/c800
+URxvt.background: rgba:0000/0000/0000/0000
 
 URxvt.foreground: rgba:ffff/ffff/ffff/ffff
 

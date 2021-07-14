@@ -217,8 +217,9 @@ exec_always sh ~/.fehbg
 # Replace caps lock with ctrl
 exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
 
-# Load in the bing photo of the day as background
+# Load in the photo of the day as background
 exec_always sh ~/Scripts/bing.sh
+#exec_always python3 ~/Scripts/natgeo.py
 
 # Init URxvt
 exec_always --no-startup-id sh ~/.xinitrc

@@ -3,6 +3,9 @@
 # Install all user installed packages
 apt-get install $(grep -vE "^\s*#" userInstalledPackages  | tr "\n" " ")
 
+# Install some python libs needed for our scripts
+pip3 install bs4
+
 # Copy root configs
 sudo cp -a .etc.lightdm/* /etc/lightdm
 

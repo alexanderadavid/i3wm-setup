@@ -23,9 +23,7 @@
 !README.md
 !userInstalledPackages
 !.Xdefaults
-!.Xmodmap
 !.Xresources
 !.gitignore
 !.xinitrc
-!.xprofile
 !.zshrc

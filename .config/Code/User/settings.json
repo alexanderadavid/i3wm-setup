@@ -42,22 +42,22 @@
         "tab.activeBackground": "#201f1f", 
         "editor.selectionBackground": "#6c40bebd", 
         "peekViewEditor.background": "#000000", 
-        "statusBar.noFolderForeground": "#05040B", 
-        "sideBar.border": "#768857", 
+        "statusBar.noFolderForeground": "#000000", 
+        "sideBar.border": "#3587CE", 
         "editorGroupHeader.tabsBackground": "#000000", 
         "tab.activeForeground": "#ffffff", 
         "editor.findMatchHighlightBackground": "#7a89cc81", 
-        "editorGroup.border": "#05040B", 
-        "statusBar.noFolderBackground": "#758736", 
-        "statusBar.foreground": "#05040B", 
+        "editorGroup.border": "#000000", 
+        "statusBar.noFolderBackground": "#6D8EAD", 
+        "statusBar.foreground": "#000000", 
         "editor.findMatchBackground": "#7a89ccc5", 
         "tab.inactiveBackground": "#000000", 
-        "peekView.border": "#768857", 
-        "statusBar.border": "#05040B", 
-        "tab.inactiveForeground": "#abb2be", 
-        "statusBar.background": "#758736", 
+        "peekView.border": "#3587CE", 
+        "statusBar.border": "#000000", 
+        "tab.inactiveForeground": "#d6d9da", 
+        "statusBar.background": "#6D8EAD", 
         "editor.background": "#000000", 
-        "tab.activeBorder": "#B2B64E"
+        "tab.activeBorder": "#6095CC"
     }, 
     "go.toolsGopath": "~/Development/cwn/go", 
     "go.testFlags": [
@@ -100,7 +100,7 @@
     "window.zoomLevel": 1, 
     "telemetry.enableTelemetry": false, 
     "editor.formatOnSave": true, 
+    "diffEditor.ignoreTrimWhitespace": false, 
     "bracketPairColorizer.colorMode": "Independent", 
-    "go.useLanguageServer": true,
-    "diffEditor.ignoreTrimWhitespace": false
+    "go.useLanguageServer": true
 }

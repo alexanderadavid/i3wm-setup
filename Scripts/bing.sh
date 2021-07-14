@@ -14,7 +14,7 @@ curl --output ~/Pictures/Bing/$DATE.jpg "https://www.bing.com$urlpath"
 
 convert -scale 3840x2160 ~/Pictures/Bing/$DATE.jpg /usr/share/backgrounds/lightdm.png
 
-wal -i ~/Pictures/Bing/$DATE.jpg
+wal -i ~/Pictures/Bing/$DATE.jpg -b '#000000'
 
 sh /home/alex/Scripts/codeColors.sh
 
