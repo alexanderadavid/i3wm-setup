@@ -6,7 +6,7 @@
 
 * {
     selected-normal-foreground:  rgba ( 2, 20, 63, 100 % );
-	foreground:	 #6095CC;
+	foreground:	 #5D6955;
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 0, 0, 0, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
@@ -23,8 +23,8 @@
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 0, 208, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-	selected-normal-background:	 #6095CC;
-	border-color:	 #3587CE;
+	selected-normal-background:	 #5D6955;
+	border-color:	 #526950;
     spacing:                     2;
     separatorcolor:              rgba ( 219, 223, 188, 100 % );
     urgent-background:           rgba ( 0, 0, 208, 0 % );
@@ -33,7 +33,7 @@
     background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 0, 0, 208, 0 % );
-	selected-active-background:	 #d6d9da;
+	selected-active-background:	 #bfbfa3;
 }
 #window {
     background-color: @background;
@@ -46,7 +46,7 @@
 }
 #message {
     border:       2px 0px 0px ;
-	border-color:	 #3587CE;
+	border-color:	 #526950;
     padding:      1px ;
 }
 #textbox {
@@ -55,7 +55,7 @@
 #listview {
     fixed-height: 0;
     border:       2px 0px 0px ;
-	border-color:	 #3587CE;
+	border-color:	 #526950;
     spacing:      2px ;
     scrollbar:    true;
     padding:      2px 0px 0px ;
@@ -108,7 +108,7 @@
 }
 #mode-switcher {
     border:       2px 0px 0px ;
-	border-color:	 #3587CE;
+	border-color:	 #526950;
 }
 #button.selected {
     background-color: @selected-normal-background;

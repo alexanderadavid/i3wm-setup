@@ -1,6 +1,6 @@
 /*
 
-# Everything is ignored, use ! operator to choose what we want added back
+# This is an inclusive gitignore - everything is ignored, use ! operator to choose what we want added back
 !/Scripts
 !/.etc.lightdm
 
@@ -27,3 +27,4 @@
 !.gitignore
 !.xinitrc
 !.zshrc
+!Dockerfile

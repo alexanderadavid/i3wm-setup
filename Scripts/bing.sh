@@ -16,6 +16,6 @@ convert -scale 3840x2160 ~/Pictures/Bing/$DATE.jpg /usr/share/backgrounds/lightd
 
 wal -i ~/Pictures/Bing/$DATE.jpg -b '#000000'
 
-sh /home/alex/Scripts/codeColors.sh
+sh /home/alex/Scripts/colors.sh
 
 #test this with 'msgcat --color=test'

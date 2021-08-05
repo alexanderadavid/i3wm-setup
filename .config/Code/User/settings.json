@@ -43,21 +43,21 @@
         "editor.selectionBackground": "#6c40bebd", 
         "peekViewEditor.background": "#000000", 
         "statusBar.noFolderForeground": "#000000", 
-        "sideBar.border": "#3587CE", 
+        "sideBar.border": "#526950", 
         "editorGroupHeader.tabsBackground": "#000000", 
         "tab.activeForeground": "#ffffff", 
         "editor.findMatchHighlightBackground": "#7a89cc81", 
         "editorGroup.border": "#000000", 
-        "statusBar.noFolderBackground": "#6D8EAD", 
+        "statusBar.noFolderBackground": "#38564B", 
         "statusBar.foreground": "#000000", 
         "editor.findMatchBackground": "#7a89ccc5", 
         "tab.inactiveBackground": "#000000", 
-        "peekView.border": "#3587CE", 
+        "peekView.border": "#526950", 
         "statusBar.border": "#000000", 
-        "tab.inactiveForeground": "#d6d9da", 
-        "statusBar.background": "#6D8EAD", 
+        "tab.inactiveForeground": "#bfbfa3", 
+        "statusBar.background": "#38564B", 
         "editor.background": "#000000", 
-        "tab.activeBorder": "#6095CC"
+        "tab.activeBorder": "#5D6955"
     }, 
     "go.toolsGopath": "~/Development/cwn/go", 
     "go.testFlags": [
@@ -89,6 +89,9 @@
     "go.formatFlags": [
         "-w"
     ], 
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    }, 
     "terminal.integrated.fontSize": 13, 
     "editor.tabSize": 2, 
     "files.associations": {
