@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  smoke_test:
+    runs-on: ubuntu-latest
+    name: Smoke Test
+    steps:
+      - name: Run setupUbuntu.sh
+        id: smoke
+        uses: alexanderadavid/ubuntu-setup@v1

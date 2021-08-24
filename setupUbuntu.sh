@@ -1,7 +1,8 @@
-# Steps to setup ubuntu live here
+#!/bin/sh
+# Steps to setup ubuntu
 
 # Install all user installed packages
-apt-get install -y $(grep -vE "^\s*#" userInstalledPackages  | tr "\n" " ")
+sudo apt-get install -y $(grep -vE "^\s*#" .userInstalledPackages  | tr "\n" " ")
 
 # Install some python libs needed for our scripts
 pip3 install bs4
@@ -24,3 +25,5 @@ fi
 sudo chmod 777 /usr/share/backgrounds/lightdm.png
 
 # TODO install zsh
+
+echo Done setting up ubuntu!
