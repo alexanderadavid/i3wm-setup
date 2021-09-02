@@ -1,8 +1,7 @@
-# these are all user installed packages
-# installed via 'apt-mark showmanual'
 alsa-utils
 apparmor
 apt-transport-https
+bash
 ca-certificates
 compiz-plugins
 compizconfig-settings-manager
@@ -65,6 +64,7 @@ lvm2
 mokutil
 ncurses-base
 ncurses-bin
+net-tools
 nodejs
 python3-pip
 ranger
@@ -78,5 +78,7 @@ ubuntu-desktop
 ubuntu-minimal
 ubuntu-standard
 ubuntu-wallpapers
+wmctrl
+x11-utils
 xclip
 zsh

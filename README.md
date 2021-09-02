@@ -24,5 +24,3 @@ I realize it seems a bit strange to keep your home directory as a git repo... I 
 - PR for pywal to `#define` variables in .Xresources so we can edit rofi colors
   https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/
   https://gist.github.com/rawsh/9ae04a2bdbfce513ad0851d9277515d2
-- vscode extensions list?
-- prepush scripts to update .etc.lightdm and userInstalledPackages

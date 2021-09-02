@@ -2,8 +2,8 @@
 ZSH_THEME="robbyrussell"
 
 # path
-export ZSH="/home/alex/.oh-my-zsh"
-export PATH=$PATH:/home/alex/.local/bin
+export ZSH="$HOME/.oh-my-zsh"
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 
 # aliases
@@ -23,3 +23,6 @@ source <(npm completion)
 bindkey '^H' backward-kill-word 
 bindkey "\e[7~" beginning-of-line
 bindkey "\e[8~" end-of-line
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

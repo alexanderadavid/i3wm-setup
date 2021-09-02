@@ -17,7 +17,7 @@ WORKDIR /ubuntu-setup
 
 # We don't want to blow up our container with all userInstalledPackages.
 # Just install the needed ones
-RUN echo "python3-pyqt5 \n imagemagick" > .userInstalledPackages
+RUN echo "python3-pyqt5 \n imagemagick \n curl \n zsh" > .userInstalledPackages
 
 # Overwrite our startup script with this version
 COPY setupUbuntu.sh .
@@ -34,6 +34,9 @@ RUN sudo chmod 4755 setupUbuntu.sh
 
 # Upate path (removes some warnings)
 ENV PATH="/home/docker/.local/bin:${PATH}"
+
+# Enable execution of entrypoint
+RUN sudo chmod +x setupUbuntu.sh
 
 # Run our setup script
 ENTRYPOINT [ "./setupUbuntu.sh" ]

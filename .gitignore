@@ -12,6 +12,7 @@
 /.config/Code/User/*
 !/.config/Code/User/settings.json
 !/.config/Code/User/keybindings.json
+!/.config/Code/User/userExtensions.sh
 !/.config/Code/User/snippets
 
 !/.config/i3
@@ -31,3 +32,4 @@
 !.zshrc
 !Dockerfile
 !action.yml
+!prepush.sh

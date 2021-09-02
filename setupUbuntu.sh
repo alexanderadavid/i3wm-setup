@@ -24,6 +24,17 @@ if [ ! -f /usr/share/backgrounds/lightdm.png ]; then
 fi
 sudo chmod 777 /usr/share/backgrounds/lightdm.png
 
-# TODO install zsh
+# Install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+# Use zsh
+sudo chsh -s $(which zsh) 
+
+# Install extensions for VsCode (not doing this in docker for the sake of space)
+if [ -f /.dockerenv ]; then
+    echo "Skipping VsCode extensions install";
+else
+    sh .config/Code/User/userExtensions.sh
+fi
 
 echo Done setting up ubuntu!
