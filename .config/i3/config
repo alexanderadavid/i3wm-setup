@@ -209,7 +209,6 @@ bindsym Mod1+c exec code
 # firefox
 bindsym Mod1+n exec firefox
 # slack
-# bindsym Mod1+i exec slack
 
 # Set last background
 exec_always sh ~/.fehbg
@@ -233,3 +232,5 @@ exec_always redshift
 # Start compton
 exec_always --no-startup-id compton
 
+# Disable sleep https://askubuntu.com/questions/47311/how-do-i-disable-my-system-from-going-to-sleep
+exec_always sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target

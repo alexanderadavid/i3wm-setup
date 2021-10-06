@@ -5,6 +5,7 @@ ZSH_THEME="robbyrussell"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 # aliases
 alias gco="git checkout"
@@ -26,3 +27,6 @@ bindkey "\e[8~" end-of-line
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# keeping our env separate so we don't check secrets into version control
+source $HOME/.env

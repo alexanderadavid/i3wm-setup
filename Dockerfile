@@ -35,8 +35,5 @@ RUN sudo chmod 4755 setupUbuntu.sh
 # Upate path (removes some warnings)
 ENV PATH="/home/docker/.local/bin:${PATH}"
 
-# Enable execution of entrypoint
-RUN sudo chmod +x setupUbuntu.sh
-
 # Run our setup script
 ENTRYPOINT [ "./setupUbuntu.sh" ]
