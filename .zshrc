@@ -6,6 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/Scripts/bin
 
 # aliases
 alias gco="git checkout"

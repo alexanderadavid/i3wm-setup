@@ -12,8 +12,9 @@ URxvt.scrollTtyOutput:          false
 URxvt.scrollWithBuffer:         true
 URxvt.scrollTtyKeypress:        true
 
-URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,font,
-URxvt.url-launcher: google-chrome-stable
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: xdg-open
+URxvt.matcher.button: 1
 
 ! CTRL-SHIFT-[c/v] copy/paste
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard

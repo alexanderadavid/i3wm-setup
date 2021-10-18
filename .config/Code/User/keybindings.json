@@ -121,5 +121,14 @@
   {
     "key": "ctrl+e",
     "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "f6",
+    "command": "workbench.action.debug.disconnect"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState != 'initializing'"
   }
 ]

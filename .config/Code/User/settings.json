@@ -6,24 +6,23 @@
             "--proto_path=${env.GOPATH}/src"
         ]
     }, 
-    "workbench.sideBar.location": "left", 
-    "go.testFlags": [
-        "-v"
-    ], 
+    "python.pythonPath": "/usr/bin/python2", 
+    "go.toolsManagement.autoUpdate": true, 
     "terminal.integrated.rendererType": "dom", 
     "window.menuBarVisibility": "hidden", 
-    "typescript.disableAutomaticTypeAcquisition": true, 
     "workbench.activityBar.visible": false, 
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true, 
     "breadcrumbs.enabled": true, 
     "editor.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'", 
-    "security.workspace.trust.untrustedFiles": "open", 
+    "vsicons.dontShowNewVersionMessage": true, 
     "editor.fontSize": 13, 
     "[typescriptreact]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     }, 
-    "window.zoomLevel": 2, 
+    "editor.lineHeight": 22, 
+    "explorer.confirmDragAndDrop": false, 
     "telemetry.enableCrashReporter": false, 
+    "workbench.editor.untitled.hint": "hidden", 
     "mochaExplorer.logpanel": true, 
     "go.docsTool": "godoc", 
     "editor.formatOnSaveTimeout": 2000, 
@@ -45,7 +44,7 @@
     "javascript.format.semicolons": "remove", 
     "typescript.format.semicolons": "remove", 
     "go.formatTool": "goimports", 
-    "gitlens.codeLens.enabled": false, 
+    "go.autocompleteUnimportedPackages": true, 
     "typescript.updateImportsOnFileMove.enabled": "always", 
     "workbench.iconTheme": "vscode-icons", 
     "workbench.colorCustomizations": {
@@ -54,41 +53,47 @@
         "tab.activeBackground": "#201f1f", 
         "editor.selectionBackground": "#6c40bebd", 
         "peekViewEditor.background": "#000000", 
-        "sideBar.border": "#C7964D", 
+        "statusBar.noFolderForeground": "#000000", 
+        "sideBar.border": "#A38F62", 
         "editorGroupHeader.tabsBackground": "#000000", 
         "tab.activeForeground": "#ffffff", 
-        "tab.activeBorder": "#6A7886", 
         "editor.findMatchHighlightBackground": "#7a89cc81", 
         "editorGroup.border": "#000000", 
-        "statusBar.noFolderBackground": "#A9882D", 
-        "editor.background": "#000000", 
+        "statusBar.noFolderBackground": "#758958", 
+        "statusBar.foreground": "#000000", 
         "editor.findMatchBackground": "#7a89ccc5", 
         "tab.inactiveBackground": "#000000", 
-        "peekView.border": "#C7964D", 
+        "peekView.border": "#A38F62", 
         "statusBar.border": "#000000", 
-        "tab.inactiveForeground": "#c1c5c6", 
-        "statusBar.background": "#A9882D", 
-        "statusBar.foreground": "#000000", 
-        "statusBar.noFolderForeground": "#000000"
+        "tab.inactiveForeground": "#c6c6c5", 
+        "statusBar.background": "#758958", 
+        "editor.background": "#000000", 
+        "tab.activeBorder": "#C39745"
     }, 
     "go.toolsGopath": "~/Development/cwn/go", 
-    "go.toolsManagement.autoUpdate": true, 
-    "vsicons.dontShowNewVersionMessage": true, 
+    "go.testFlags": [
+        "-v"
+    ], 
+    "security.workspace.trust.untrustedFiles": "open", 
     "editor.acceptSuggestionOnCommitCharacter": false, 
     "workbench.statusBar.visible": true, 
     "terminal.integrated.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'", 
+    "runOnSave.statusMessageTimeout": 3000, 
     "prettier.jsxBracketSameLine": true, 
     "prettier.bracketSpacing": false, 
     "editor.fontLigatures": true, 
     "explorer.confirmDelete": false, 
     "javascript.updateImportsOnFileMove.enabled": "always", 
-    "python.pythonPath": "/usr/bin/python2", 
-    "runOnSave.statusMessageTimeout": 3000, 
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }, 
+    "workbench.sideBar.location": "left", 
+    "typescript.disableAutomaticTypeAcquisition": true, 
     "python.formatting.autopep8Args": [
         "--max-line-length", 
         "100"
     ], 
-    "editor.lineHeight": 22, 
+    "gitlens.codeLens.enabled": false, 
     "editor.minimap.enabled": false, 
     "python.formatting.provider": "yapf", 
     "mochaExplorer.env": {
@@ -112,7 +117,7 @@
     }, 
     "prettier.trailingComma": "es5", 
     "go.lintTool": "golangci-lint", 
-    "go.autocompleteUnimportedPackages": true, 
+    "window.zoomLevel": 1, 
     "telemetry.enableTelemetry": false, 
     "editor.formatOnSave": true, 
     "diffEditor.ignoreTrimWhitespace": false, 
@@ -121,6 +126,5 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }, 
     "terminal.integrated.fontSize": 13, 
-    "go.useLanguageServer": true,
-    "workbench.editor.untitled.hint": "hidden"
+    "go.useLanguageServer": true
 }

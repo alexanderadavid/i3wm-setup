@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -223,14 +223,8 @@ exec_always sh ~/Scripts/bing.sh
 # Init URxvt
 exec_always --no-startup-id sh ~/.xinitrc
 
-# Consume colors from pywal
-exec_always sh ~/Scripts/colors.sh
-
 # Start redshift
 exec_always redshift
 
 # Start compton
 exec_always --no-startup-id compton
-
-# Disable sleep https://askubuntu.com/questions/47311/how-do-i-disable-my-system-from-going-to-sleep
-exec_always sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
