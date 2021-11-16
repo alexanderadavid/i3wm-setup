@@ -17,7 +17,7 @@ alias gp="git pull"
 alias vscd='f() { code $1; cd $1 };f'
 
 # plugins
-plugins=(git docker)
+plugins=(git docker last-working-dir golang heroku node npm)
 source $ZSH/oh-my-zsh.sh
 source <(npm completion)
 
