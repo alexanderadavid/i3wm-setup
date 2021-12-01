@@ -1,8 +1,8 @@
 #!/bin/sh
-# Steps to setup ubuntu
+# Steps to setup Manjaro
 
 # Install all user installed packages
-sudo apt-get install -y $(grep -vE "^\s*#" .userInstalledPackages  | tr "\n" " ")
+sudo pacman -S - < .userInstalledPackages
 
 # Install some python libs needed for our scripts
 pip3 install bs4
@@ -37,4 +37,4 @@ else
     sh .config/Code/User/userExtensions.sh
 fi
 
-echo Done setting up ubuntu!
+echo Done setting up Manjaro!

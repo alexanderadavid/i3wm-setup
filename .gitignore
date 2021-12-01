@@ -4,6 +4,10 @@
 !/Scripts
 !/.etc.lightdm
 
+!/.i3
+/.i3/*
+!/.i3/config
+
 !/.config
 /.config/*
 !/.config/Code/
@@ -15,14 +19,13 @@
 !/.config/Code/User/userExtensions.sh
 !/.config/Code/User/snippets
 
-!/.config/i3
 !/.config/i3blocks
-!/.config/compton.conf
+!/.config/picom.conf
 !/.config/rofi
 
 !/.github
 
-!setupUbuntu.sh
+!setupManjaro.sh
 !README.md
 !.userInstalledPackages
 !.Xdefaults
