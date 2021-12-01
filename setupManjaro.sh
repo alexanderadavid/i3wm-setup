@@ -13,6 +13,15 @@ sudo cp -r . ~
 # Copy root configs
 sudo cp -a .etc.lightdm/* /etc/lightdm
 
+# Install backround image directories
+if [ ! -d ~/Pictures/Bing ]; then
+  mkdir ~/Pictures/Bing
+fi
+
+if [ ! -d ~/Pictures/NatGeo ]; then
+  mkdir ~/Pictures/NatGeo
+fi
+
 # Link wal's Xresources to ours to give our terminal wal gerated colors
 if [ ! -f ~/.cache/wal/colors.Xresources ]; then
   ln -s ~/.cache/wal/colors.Xresources ~/.Xresources -f
@@ -29,6 +38,10 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 
 # Use zsh
 sudo chsh -s $(which zsh) 
+
+# TODO install oh-my-zsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
+# TODO install vscode https://snapcraft.io/install/code/manjaro
+# TODO install fonts
 
 # Install extensions for VsCode (not doing this in docker for the sake of space)
 if [ -f /.dockerenv ]; then
