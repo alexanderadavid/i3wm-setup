@@ -31,15 +31,15 @@ fi
 if [ ! -f /usr/share/backgrounds/lightdm.png ]; then
   sudo convert -size 32x32 xc:white /usr/share/backgrounds/lightdm.png 
 fi
-sudo chmod 777 /usr/share/backgrounds/lightdm.png
+sudo chmod 644 /usr/share/backgrounds/lightdm.png
 
 # Install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
 # Use zsh
 sudo chsh -s $(which zsh) 
+# TODO install oh-my-zsh instead of use chsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
 
-# TODO install oh-my-zsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
 # TODO install vscode https://snapcraft.io/install/code/manjaro
 # TODO install fonts
 

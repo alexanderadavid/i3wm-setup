@@ -25,5 +25,3 @@ I realize it seems a bit strange to keep your home directory as a git repo... I 
   https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/
   https://gist.github.com/rawsh/9ae04a2bdbfce513ad0851d9277515d2
 
-  picom is at `.config/picom.conf`
-  need to install oh-my-zsh

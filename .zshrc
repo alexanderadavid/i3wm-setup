@@ -8,6 +8,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/Scripts/bin
 
+export BROWSER=$(which google-chrome-stable)
 # aliases
 alias gco="git checkout"
 alias gs="git status"

@@ -39,6 +39,7 @@ def main():
 
     os.system("curl --output %s %s" % ("~/Pictures/NatGeo/" + title, image))
     os.system("wal -b '#000000' -i %s" % "~/Pictures/NatGeo/" + title)
+    os.system('feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"')
 
     os.system(
         "convert -gravity center -scale 3840x2416 %s /usr/share/backgrounds/lightdm.png"

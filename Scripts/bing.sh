@@ -16,6 +16,6 @@ convert -scale 3840x2160 ~/Pictures/Bing/$DATE.jpg /usr/share/backgrounds/lightd
 
 wal -i ~/Pictures/Bing/$DATE.jpg -b '#000000'
 
-sh /home/alex/Scripts/colors.sh
+feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 
-#test this with 'msgcat --color=test'
+sh /home/alex/Scripts/colors.sh

@@ -1,5 +1,5 @@
 name: 'Smoke Test'
-description: 'Builds Ubuntu image and runs setup script'
+description: 'Builds Manjaro (Arch) image and runs setup script'
 runs:
   using: 'docker'
   image: 'Dockerfile'
