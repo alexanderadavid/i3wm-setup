@@ -12,12 +12,12 @@ URxvt.scrollTtyOutput:          false
 URxvt.scrollWithBuffer:         true
 URxvt.scrollTtyKeypress:        true
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.urlLauncher: xdg-open
 URxvt.matcher.button: 1
 
 ! CTRL-SHIFT-[c/v] copy/paste
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Control-v: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:

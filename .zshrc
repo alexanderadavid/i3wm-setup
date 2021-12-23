@@ -1,5 +1,5 @@
 # theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="minimal"
 
 # path
 export ZSH="$HOME/.oh-my-zsh"
@@ -16,16 +16,17 @@ alias gb="git branch"
 alias gcam="git commit --amend"
 alias gp="git pull"
 alias vscd='f() { code $1; cd $1 };f'
+alias devChrome='google-chrome-stable --disable-web-security'
 
 # plugins
-plugins=(git docker last-working-dir golang heroku node npm)
+plugins=(git docker last-working-dir golang heroku node)
 source $ZSH/oh-my-zsh.sh
 source <(npm completion)
 
 # keyboard
-# bindkey '^H' backward-kill-word 
-# bindkey "\e[7~" beginning-of-line
-# bindkey "\e[8~" end-of-line
+bindkey '^H' backward-kill-word 
+bindkey "\e[7~" beginning-of-line
+bindkey "\e[8~" end-of-line
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -4,10 +4,6 @@
 !/Scripts
 !/.etc.lightdm
 
-!/.i3
-/.i3/*
-!/.i3/config
-
 !/.config
 /.config/*
 !/.config/Code/
@@ -19,9 +15,13 @@
 !/.config/Code/User/userExtensions.sh
 !/.config/Code/User/snippets
 
+!/.config/i3
 !/.config/i3blocks
 !/.config/picom.conf
 !/.config/rofi
+
+!/.urxvt
+~!/.urxvt/ext
 
 !/.github
 

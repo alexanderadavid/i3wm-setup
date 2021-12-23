@@ -1,11 +1,5 @@
 {
     "javascript.validate.enable": false,
-    "protoc": {
-        "options": [
-            "--proto_path=${workspaceRoot}/go/src",
-            "--proto_path=${env.GOPATH}/src"
-        ]
-    },
     "python.pythonPath": "/usr/bin/python2",
     "go.toolsManagement.autoUpdate": true,
     "terminal.integrated.rendererType": "dom",
@@ -16,9 +10,6 @@
     "editor.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "vsicons.dontShowNewVersionMessage": true,
     "editor.fontSize": 13,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
     "editor.lineHeight": 22,
     "explorer.confirmDragAndDrop": false,
     "telemetry.enableCrashReporter": false,
@@ -27,14 +18,7 @@
     "go.docsTool": "godoc",
     "editor.formatOnSaveTimeout": 2000,
     "prettier.singleQuote": true,
-    "[json]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
     "terminal.integrated.cursorStyle": "line",
-    "[typescript]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "files.autoSave": "afterDelay",
     "go.liveErrors": {
         "delay": 500,
         "enabled": true
@@ -54,23 +38,22 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#3D678D",
+        "sideBar.border": "#574D46",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#A7885B",
+        "statusBar.noFolderBackground": "#3F4040",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#3D678D",
+        "peekView.border": "#574D46",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#c4c7ca",
-        "statusBar.background": "#A7885B",
+        "tab.inactiveForeground": "#bfb9b3",
+        "statusBar.background": "#3F4040",
         "editor.background": "#000000",
-        "tab.activeBorder": "#887C82"
+        "tab.activeBorder": "#65594F"
     },
-    "go.toolsGopath": "~/Development/cwn/go",
     "go.testFlags": [
         "-v"
     ],
@@ -112,19 +95,20 @@
         "*.yaml": "plain text"
     },
     "editor.tabSize": 2,
-    "[javascript]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
     "prettier.trailingComma": "es5",
     "go.lintTool": "golangci-lint",
-    "window.zoomLevel": 1,
     "telemetry.enableTelemetry": false,
     "editor.formatOnSave": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "bracketPairColorizer.colorMode": "Independent",
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "terminal.integrated.fontSize": 13,
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "window.zoomLevel": 1,
+    "bracketPairColorizer.depreciation-notice": false,
+    "files.autoSave": "afterDelay",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
 }
