@@ -184,7 +184,7 @@ bar {
    status_command    i3blocks
    tray_output       none
   
-   font pango:DejaVu Sans Mono, FontAwesome 15
+   font pango:DejaVu Sans Mono, Font Awesome 6 Brands Regular-400, Font Awesome 6 Free-Regular-400, Font Awesome 6 Free-Solid-900 15
    #font pango:DejaVu Sans Mono, FontAwesome5Free, FontAwesome5Brands 15
 
    colors {
@@ -215,6 +215,8 @@ exec_always sh ~/.fehbg
 
 # Replace caps lock with ctrl
 exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
+# Restore the caps lock in case we get stuck in a bad state
+# xmodmap -e 'keycode 0x42 = Caps_Lock'
 
 # Load in the photo of the day as background
 exec_always sh ~/Scripts/bing.sh

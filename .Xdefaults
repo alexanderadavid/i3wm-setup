@@ -24,8 +24,8 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 
 ! Fonts
 URxvt.letterSpace: -1
-URxvt.font:     xft:bitstream vera sans mono:size=16:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=16:antialias=true
+URxvt.font:     xft:bitstream vera sans mono:size=13:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=13:antialias=true
 
 ! Visibility
 URxvt.transparent:   false

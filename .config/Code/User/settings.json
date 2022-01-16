@@ -38,21 +38,21 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#574D46",
+        "sideBar.border": "#465E9E",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#3F4040",
+        "statusBar.noFolderBackground": "#B48D71",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#574D46",
+        "peekView.border": "#465E9E",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#bfb9b3",
-        "statusBar.background": "#3F4040",
+        "tab.inactiveForeground": "#afb8d8",
+        "statusBar.background": "#B48D71",
         "editor.background": "#000000",
-        "tab.activeBorder": "#65594F"
+        "tab.activeBorder": "#5366A5"
     },
     "go.testFlags": [
         "-v"
@@ -105,10 +105,11 @@
     },
     "terminal.integrated.fontSize": 13,
     "go.useLanguageServer": true,
-    "window.zoomLevel": 1,
     "bracketPairColorizer.depreciation-notice": false,
-    "files.autoSave": "afterDelay",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    }
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript"
+    ]
 }

@@ -10,10 +10,10 @@ separator=true
 command=amixer -D pulse get Master | egrep -o "[0-9]+%" | sed -n '2 p'
 color=#ffd0d8
 
-#[battery]
-#command= python ~/Scripts/battery.py
-#markup=pango
-#interval=30
+[battery]
+command=python ~/Scripts/battery.py
+markup=pango
+interval=30
 
 #[memory]
 #label=
