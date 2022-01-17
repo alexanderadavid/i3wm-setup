@@ -14,6 +14,10 @@ sudo cp -r . ~
 sudo cp -a .etc.lightdm/* /etc/lightdm
 
 # Install backround image directories
+if [ ! -d ~/Pictures ]; then
+  mkdir ~/Pictures
+fi
+
 if [ ! -d ~/Pictures/Bing ]; then
   mkdir ~/Pictures/Bing
 fi
