@@ -2,6 +2,7 @@
 import subprocess
 import os
 
+outputNames = ["DP-3-2", "DP-2-2", "DP-2-1"]
 
 def screens():
     output = [
@@ -11,9 +12,12 @@ def screens():
 
 
 for screen in screens():
-    print (screen)
-    if screen == "DP1-2":
-        os.system("xra")
-    if screen == "DP2-2" or screen == "DP2" or screen == "DP-1":
-        os.system("setupMonitor")
+    # print (screen)
+    if screen in outputNames:
+        execStr = """
+            xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal \
+            --output %s --mode 3840x2160 --pos 1920x0 --rotate normal
+        """ % screen
+
+        os.system(execStr)
 

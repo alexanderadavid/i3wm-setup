@@ -28,3 +28,6 @@ I realize it seems a bit strange to keep your home directory as a git repo... I 
 
 - Fix `redshift`
 - Fix docker build for this branch
+- "git preferences" like `git config --global pager.branch false`s
+- zoom screen share picom
+- solution to separate vscode settings.json from it's colors to prevent constant git updates

@@ -18,7 +18,9 @@
 !/.config/i3
 !/.config/i3blocks
 !/.config/picom.conf
-!/.config/rofi
+# !/.config/rofi
+
+!/.config/mimeapps.list
 
 !/.urxvt
 ~!/.urxvt/ext
