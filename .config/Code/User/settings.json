@@ -32,21 +32,21 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#C04231",
+        "sideBar.border": "#927994",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#AA072A",
+        "statusBar.noFolderBackground": "#0F7BC5",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#C04231",
+        "peekView.border": "#927994",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#8facca",
-        "statusBar.background": "#AA072A",
+        "tab.inactiveForeground": "#c1bec7",
+        "statusBar.background": "#0F7BC5",
         "editor.background": "#000000",
-        "tab.activeBorder": "#D9075A"
+        "tab.activeBorder": "#658AB0"
     },
     "go.testFlags": [
         "-v"
@@ -103,7 +103,8 @@
         "source.fixAll.eslint": true
     },
     "eslint.validate": [
-        "javascript"
+        "javascript",
+        "typescript"
     ],
     "python.defaultInterpreterPath": "/usr/bin/python2",
     "js/ts.implicitProjectConfig.checkJs": true,

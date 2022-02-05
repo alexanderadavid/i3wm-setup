@@ -17,8 +17,8 @@ I realize it seems a bit strange to keep your home directory as a git repo... I 
 ## Instructions
 
 1. Clone this repo
-2. cd into the newly cloned repo `cd ubuntu-setup`
-3. Run the setup script (as root) `sh setupUbuntu.sh`
+2. cd into the newly cloned repo `cd i3wm-setup`
+3. Run the setup script (as root) `sh setupManjaro.sh` or `sh setupUbuntu.sh`
 
 ### TODO
 
@@ -26,8 +26,5 @@ I realize it seems a bit strange to keep your home directory as a git repo... I 
   https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/
   https://gist.github.com/rawsh/9ae04a2bdbfce513ad0851d9277515d2
 
-- Fix `redshift`
-- Fix docker build for this branch
-- "git preferences" like `git config --global pager.branch false`s
 - zoom screen share picom
 - solution to separate vscode settings.json from it's colors to prevent constant git updates

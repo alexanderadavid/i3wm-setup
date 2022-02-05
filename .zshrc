@@ -32,4 +32,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # keeping our env separate so we don't check secrets into version control
-# source $HOME/.env
+source $HOME/.env

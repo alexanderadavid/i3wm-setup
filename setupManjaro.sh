@@ -45,7 +45,6 @@ sudo chsh -s $(which zsh)
 # TODO install oh-my-zsh instead of use chsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
 
 # TODO install vscode https://snapcraft.io/install/code/manjaro
-# TODO install fonts
 
 # Install extensions for VsCode (not doing this in docker for the sake of space)
 if [ -f /.dockerenv ]; then
@@ -53,5 +52,8 @@ if [ -f /.dockerenv ]; then
 else
     sh .config/Code/User/userExtensions.sh
 fi
+
+# Set some git preferences
+git config --global pager.branch false
 
 echo Done setting up Manjaro!
