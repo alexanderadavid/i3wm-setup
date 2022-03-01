@@ -13,7 +13,7 @@ URxvt.scrollWithBuffer:         true
 URxvt.scrollTtyKeypress:        true
 
 URxvt.perl-ext-common: default,matcher,resize-font
-URxvt.urlLauncher: xdg-open
+URxvt.url-launcher: xdg-open
 URxvt.matcher.button: 1
 
 ! CTRL-SHIFT-[c/v] copy/paste

@@ -32,21 +32,21 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#927994",
+        "sideBar.border": "#939393",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#0F7BC5",
+        "statusBar.noFolderBackground": "#8B8B8B",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#927994",
+        "peekView.border": "#939393",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#c1bec7",
-        "statusBar.background": "#0F7BC5",
+        "tab.inactiveForeground": "#d2d2d2",
+        "statusBar.background": "#8B8B8B",
         "editor.background": "#000000",
-        "tab.activeBorder": "#658AB0"
+        "tab.activeBorder": "#9C9C9C"
     },
     "go.testFlags": [
         "-v"
@@ -108,5 +108,7 @@
     ],
     "python.defaultInterpreterPath": "/usr/bin/python2",
     "js/ts.implicitProjectConfig.checkJs": true,
-    "files.autoSave": "afterDelay"
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
