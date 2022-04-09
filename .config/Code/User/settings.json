@@ -32,21 +32,21 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#939393",
+        "sideBar.border": "#3586B3",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#8B8B8B",
+        "statusBar.noFolderBackground": "#8675A0",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#939393",
+        "peekView.border": "#3586B3",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#d2d2d2",
-        "statusBar.background": "#8B8B8B",
+        "tab.inactiveForeground": "#c6ced9",
+        "statusBar.background": "#8675A0",
         "editor.background": "#000000",
-        "tab.activeBorder": "#9C9C9C"
+        "tab.activeBorder": "#6390AD"
     },
     "go.testFlags": [
         "-v"
@@ -110,5 +110,9 @@
     "js/ts.implicitProjectConfig.checkJs": true,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "jestrunner.jestCommand": "npm test -- ",
+    "jestrunner.debugOptions": {},
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.inlineSuggest.enabled": true
 }

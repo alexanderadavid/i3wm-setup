@@ -6,9 +6,12 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:$HOME/Scripts/bin
+
+export LD_LIBRARY_PATH=$HOME/Development/cloudprint/Install/usr/lib
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":/usr/lib
 
 export BROWSER=$(which google-chrome-stable)
+
 # aliases
 alias gco="git checkout"
 alias gs="git status"
@@ -19,7 +22,7 @@ alias vscd='f() { code $1; cd $1 };f'
 alias devChrome='google-chrome-stable --disable-web-security'
 
 # plugins
-plugins=(git docker last-working-dir golang heroku node)
+plugins=(git docker golang heroku node)
 source $ZSH/oh-my-zsh.sh
 source <(npm completion)
 
@@ -33,3 +36,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # keeping our env separate so we don't check secrets into version control
 source $HOME/.env
+
+cd ~/Development/cloudprint

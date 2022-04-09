@@ -56,4 +56,7 @@ fi
 # Set some git preferences
 git config --global pager.branch false
 
+# symlink our scripts to /usr/bin so we can run them in rofi
+sudo ln -s ~/Scripts/bin/* /usr/bin
+
 echo Done setting up Manjaro!
