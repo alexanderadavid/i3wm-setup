@@ -37,11 +37,11 @@ else:
     # stands for plugged in
     FA_PLUG = "<span font='FontAwesome'>\uf1e6</span>"
 
-    FA_BATTERY_100 = "<span font='FontAwesome'>\uf240</span>"
-    FA_BATTERY_75 = "<span font='FontAwesome'>\uf241</span>"
-    FA_BATTERY_50 = "<span font='FontAwesome'>\uf242</span>"
-    FA_BATTERY_25 = "<span font='FontAwesome'>\uf243</span>"
-    FA_BATTERY_0 = "<span font='FontAwesome'>\uf244</span>"
+    FA_BATTERY_100 = "<span font='FontAwesome'>\uf240 </span>"
+    FA_BATTERY_75 = "<span font='FontAwesome'>\uf241 </span>"
+    FA_BATTERY_50 = "<span font='FontAwesome'>\uf242 </span>"
+    FA_BATTERY_25 = "<span font='FontAwesome'>\uf243 </span>"
+    FA_BATTERY_0 = "<span font='FontAwesome'>\uf244 </span>"
 
     fulltext = ""
     timeleft = ""
@@ -64,7 +64,7 @@ else:
     elif state == "Full":
         fulltext = FA_PLUG + " "
     elif state == "Unknown":
-        fulltext = "<span font='FontAwesome'>\uf128</span> "
+        fulltext = "<span font='FontAwesome'>\uf128 </span> "
     else:
         fulltext = FA_LIGHTNING + " " + FA_PLUG + " "
 
@@ -90,7 +90,7 @@ else:
 
     form = '<span color="{}">{}</span>'
     fulltext = form.format(color(percentleft), fulltext)
-    form = '<span color="{}">{}%</span>'
+    form = '<span color="{}"> {}%</span>'
     fulltext += form.format(color(percentleft), percentleft)
     #fulltext += timeleft
 

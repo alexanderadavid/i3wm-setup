@@ -4,7 +4,7 @@
 #interval = 600
 
 [volume]
-label=
+label= 
 interval=1
 separator=true
 command=amixer -D pulse get Master | egrep -o "[0-9]+%" | sed -n '2 p'
@@ -29,14 +29,14 @@ interval=30
 #separator=false
 
 [temperature]
-label=︁
+label=︁ 
 interval=10
 command=T=$(cat /sys/class/thermal/thermal_zone0/temp); echo $(( $T / 1000 ))°C
 color=#dcedc1
 separator=true
 
 [wifi]
-label=︁
+label=︁ 
 #instance=wlp1s0
 command=iwgetid -r
 color=#669bd1

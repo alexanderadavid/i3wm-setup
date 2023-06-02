@@ -11,9 +11,10 @@ def screens():
     ]
     return [l.split()[0] for l in output if " connected " in l]
 
-connectedScreen = ''
+connectedScreen = outputNames[0]
+
 for screen in screens():
-    # print (screen)
+    print (screen)
     if screen in outputNames:
         connectedScreen = screen
         break
@@ -24,7 +25,7 @@ execStr = """
 
 os.system(execStr)
 
-time.sleep(6)
+time.sleep(3)
 
 execStr = """
     xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal \
