@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec tilix
 
 # kill focused window
 bindsym $mod+q kill
@@ -171,6 +171,9 @@ set_from_resource $light i3wm.color7
 set_from_resource $medium i3wm.color12
 set_from_resource $alt i3wm.color2
 set_from_resource $border i3wm.color3
+# Remove all borders and titles
+for_window [class="^.*"] border pixel 0
+
 
 #class                  border      backgr.   text    indicator   child_border
 client.focused          $medium     $medium   $dark   $dark       $dark
@@ -222,15 +225,12 @@ exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
 exec_always sh ~/Scripts/bin/bing
 #exec_always python3 ~/Scripts/natgeo.py
 
-# Init URxvt
-exec_always --no-startup-id sh ~/.xinitrc
-
 # Start redshift
 # exec_always /usr/lib/geoclue-2.0/demos/agent &
-# exec_always redshift
+exec_always redshift
 
 # Start compton
-exec_always --no-startup-id compton
+exec_always --no-startup-id compton -b
 
 # Setup monitor
 exec_always python3 ~/Scripts/setupMonitor.py

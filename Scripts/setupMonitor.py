@@ -2,7 +2,7 @@
 import subprocess
 import os
 
-outputNames = ["DP-3-2", "DP-2-2", "DP-2-1"]
+outputNames = ["DP-3-2", "DP-2-2", "DP-2-1", "HDMI-1"]
 
 def screens():
     output = [
@@ -15,7 +15,7 @@ for screen in screens():
     # print (screen)
     if screen in outputNames:
         execStr = """
-            xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal \
+            xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x840 --rotate normal \
             --output %s --mode 3840x2160 --pos 1920x0 --rotate normal
         """ % screen
 

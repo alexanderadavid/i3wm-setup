@@ -1,30 +1,27 @@
 {
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.fixAll": [
+        "source.unusedImports",
+    ],
+    "jest.autoRun": {
+        "onStartup": false,
+        "onSave": false,
+        "watch": false
+    },
     "javascript.validate.enable": false,
-    "python.pythonPath": "/usr/bin/python2",
     "go.toolsManagement.autoUpdate": true,
-    "window.menuBarVisibility": "hidden",
-    "workbench.activityBar.visible": false,
-    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "go.testTimeout": "300s",
+    "remote.SSH.showLoginTerminal": true,
     "breadcrumbs.enabled": true,
     "editor.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "vsicons.dontShowNewVersionMessage": true,
     "editor.fontSize": 13,
     "editor.lineHeight": 22,
     "explorer.confirmDragAndDrop": false,
-    "workbench.editor.untitled.hint": "hidden",
-    "go.docsTool": "godoc",
     "prettier.singleQuote": true,
     "terminal.integrated.cursorStyle": "line",
-    "go.liveErrors": {
-        "delay": 500,
-        "enabled": true
-    },
-    "javascript.format.semicolons": "remove",
-    "typescript.format.semicolons": "remove",
     "go.formatTool": "goimports",
-    "go.autocompleteUnimportedPackages": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.iconTheme": "vscode-icons",
+    "python.envFile": "${workspaceFolder}/.env",
     "workbench.colorCustomizations": {
         "sideBar.background": "#000000",
         "editorRuler.foreground": "#ff0000",
@@ -32,21 +29,21 @@
         "editor.selectionBackground": "#6c40bebd",
         "peekViewEditor.background": "#000000",
         "statusBar.noFolderForeground": "#000000",
-        "sideBar.border": "#3586B3",
+        "sideBar.border": "#1F8D71",
         "editorGroupHeader.tabsBackground": "#000000",
         "tab.activeForeground": "#ffffff",
         "editor.findMatchHighlightBackground": "#7a89cc81",
         "editorGroup.border": "#000000",
-        "statusBar.noFolderBackground": "#8675A0",
+        "statusBar.noFolderBackground": "#6B8A2E",
         "statusBar.foreground": "#000000",
         "editor.findMatchBackground": "#7a89ccc5",
         "tab.inactiveBackground": "#000000",
-        "peekView.border": "#3586B3",
+        "peekView.border": "#1F8D71",
         "statusBar.border": "#000000",
-        "tab.inactiveForeground": "#c6ced9",
-        "statusBar.background": "#8675A0",
+        "tab.inactiveForeground": "#83ccd4",
+        "statusBar.background": "#6B8A2E",
         "editor.background": "#000000",
-        "tab.activeBorder": "#6390AD"
+        "tab.activeBorder": "#000000"
     },
     "go.testFlags": [
         "-v"
@@ -55,33 +52,27 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "workbench.statusBar.visible": true,
     "terminal.integrated.fontFamily": "'Operator Mono Book', 'Fira Mono', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "prettier.jsxBracketSameLine": true,
     "prettier.bracketSpacing": false,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "workbench.sideBar.location": "left",
     "typescript.disableAutomaticTypeAcquisition": true,
-    "python.formatting.autopep8Args": [
-        "--max-line-length",
-        "100"
-    ],
     "gitlens.codeLens.enabled": false,
     "editor.minimap.enabled": false,
-    "python.formatting.provider": "autopep8",
     "mochaExplorer.env": {
         "PUPPETEER_ARGS": "--no-sandbox --disable-dev-shm-usage"
     },
-    "python.formatting.autopep8Path": "/usr/bin/autopep8",
     "workbench.editor.enablePreview": false,
     "go.formatFlags": [
         "-w"
     ],
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.json": "default"
     },
     "files.associations": {
         "*.jsx": "javascript",
@@ -90,23 +81,17 @@
     "editor.tabSize": 2,
     "prettier.trailingComma": "es5",
     "go.lintTool": "golangci-lint",
-    "editor.formatOnSave": true,
-    "bracketPairColorizer.colorMode": "Independent",
+    "editor.formatOnSave": false,
+    // TODO this could be theme colors
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "terminal.integrated.fontSize": 13,
     "go.useLanguageServer": true,
     "bracketPairColorizer.depreciation-notice": false,
-    "editor.codeActionsOnSave": {
-        "source.addMissingImports": true,
-        "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-        "javascript",
-        "typescript"
-    ],
-    "python.defaultInterpreterPath": "/usr/bin/python2",
+    // "python.defaultInterpreterPath": "/usr/bin/python2",
     "js/ts.implicitProjectConfig.checkJs": true,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -114,5 +99,31 @@
     "jestrunner.jestCommand": "npm test -- ",
     "jestrunner.debugOptions": {},
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "githubPullRequests.pullBranch": "never",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    // "[typescriptreact]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // },
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // },
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    // "[typescript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.menuBarVisibility": "toggle"
 }

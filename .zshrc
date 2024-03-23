@@ -4,9 +4,12 @@ ZSH_THEME="minimal"
 # path
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/Scripts/bin
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# export GOROOT=/usr
+# export PATH=$PATH:$GOROOT/bin
 
 export BROWSER=$(which google-chrome-stable)
 
@@ -26,7 +29,7 @@ source $ZSH/oh-my-zsh.sh
 source <(npm completion)
 
 # keyboard
-bindkey '^H' backward-kill-word 
+# bindkey '^H' backward-kill-word 
 bindkey "\e[7~" beginning-of-line
 bindkey "\e[8~" end-of-line
 

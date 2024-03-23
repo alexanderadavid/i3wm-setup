@@ -18,9 +18,12 @@
 !/.config/i3
 !/.config/i3blocks
 !/.config/picom.conf
-# !/.config/rofi
-
 !/.config/mimeapps.list
+
+# config.rasi has been skipped in git with
+# git update-index --skip-worktree .config/rofi/config.rasi
+#  we can undo this with
+# git update-index --no-skip-worktree .config/rofi/config.rasi
 
 !/.urxvt
 ~!/.urxvt/ext
