@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec tilix
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+q kill
@@ -172,7 +172,7 @@ set_from_resource $medium i3wm.color12
 set_from_resource $alt i3wm.color2
 set_from_resource $border i3wm.color3
 # Remove all borders and titles
-for_window [class="^.*"] border pixel 0
+# for_window [class="^.*"] border pixel 0
 
 
 #class                  border      backgr.   text    indicator   child_border
@@ -224,6 +224,10 @@ exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
 # Load in the photo of the day as background
 exec_always sh ~/Scripts/bin/bing
 #exec_always python3 ~/Scripts/natgeo.py
+
+# Init URxvt
+exec_always xrdb -merge ~/.Xresources
+exec_always xrdb -merge ~/.cache/wal/colors.Xresources
 
 # Start redshift
 # exec_always /usr/lib/geoclue-2.0/demos/agent &
